@@ -1,0 +1,2 @@
+#include "k15.dtsi"
+&k15_transform { col-offset = <7>; };

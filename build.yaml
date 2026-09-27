@@ -1,0 +1,7 @@
+include:
+  - board: nice_nano_v2
+    shield: k15_left
+    artifact-name: k15_revC_left
+  - board: nice_nano_v2
+    shield: k15_right
+    artifact-name: k15_revC_right
