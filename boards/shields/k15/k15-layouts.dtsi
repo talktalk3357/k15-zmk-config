@@ -1,0 +1,78 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    k15_layout: k15_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "K15 RevC 64 keys";
+        transform = <&k15_transform>;
+        kscan = <&k15_kscan>;
+        // Same binding order as k15_transform: left SW1..32, right SW1..32.
+        // 1u = 19.05 mm. Right half offset is display-only, not a GPIO offset.
+        keys
+            = <&key_physical_attrs 100 100 0 0 0 0 0> // left SW1
+            , <&key_physical_attrs 100 100 100 0 0 0 0> // left SW2
+            , <&key_physical_attrs 100 100 200 0 0 0 0> // left SW3
+            , <&key_physical_attrs 100 100 300 0 0 0 0> // left SW4
+            , <&key_physical_attrs 100 100 400 0 0 0 0> // left SW5
+            , <&key_physical_attrs 100 100 500 0 0 0 0> // left SW6
+            , <&key_physical_attrs 100 100 600 50 0 0 0> // left SW7
+            , <&key_physical_attrs 100 100 0 100 0 0 0> // left SW8
+            , <&key_physical_attrs 100 100 100 100 0 0 0> // left SW9
+            , <&key_physical_attrs 100 100 200 100 0 0 0> // left SW10
+            , <&key_physical_attrs 100 100 300 100 0 0 0> // left SW11
+            , <&key_physical_attrs 100 100 400 100 0 0 0> // left SW12
+            , <&key_physical_attrs 100 100 500 100 0 0 0> // left SW13
+            , <&key_physical_attrs 100 100 600 150 0 0 0> // left SW14
+            , <&key_physical_attrs 100 100 0 200 0 0 0> // left SW15
+            , <&key_physical_attrs 100 100 100 200 0 0 0> // left SW16
+            , <&key_physical_attrs 100 100 200 200 0 0 0> // left SW17
+            , <&key_physical_attrs 100 100 300 200 0 0 0> // left SW18
+            , <&key_physical_attrs 100 100 400 200 0 0 0> // left SW19
+            , <&key_physical_attrs 100 100 500 200 0 0 0> // left SW20
+            , <&key_physical_attrs 100 100 600 250 0 0 0> // left SW21
+            , <&key_physical_attrs 100 100 0 300 0 0 0> // left SW22
+            , <&key_physical_attrs 100 100 100 300 0 0 0> // left SW23
+            , <&key_physical_attrs 100 100 200 300 0 0 0> // left SW24
+            , <&key_physical_attrs 100 100 300 300 0 0 0> // left SW25
+            , <&key_physical_attrs 100 100 400 300 0 0 0> // left SW26
+            , <&key_physical_attrs 100 100 500 300 0 0 0> // left SW27
+            , <&key_physical_attrs 100 100 0 400 0 0 0> // left SW28
+            , <&key_physical_attrs 100 100 100 400 0 0 0> // left SW29
+            , <&key_physical_attrs 100 100 200 400 0 0 0> // left SW30
+            , <&key_physical_attrs 200 100 325 400 0 0 0> // left SW31
+            , <&key_physical_attrs 100 100 550 400 0 0 0> // left SW32
+            , <&key_physical_attrs 100 100 900 0 0 0 0> // right SW1
+            , <&key_physical_attrs 100 100 1000 0 0 0 0> // right SW2
+            , <&key_physical_attrs 100 100 1100 0 0 0 0> // right SW3
+            , <&key_physical_attrs 100 100 1200 0 0 0 0> // right SW4
+            , <&key_physical_attrs 100 100 1300 0 0 0 0> // right SW5
+            , <&key_physical_attrs 100 100 1400 0 0 0 0> // right SW6
+            , <&key_physical_attrs 100 100 800 50 0 0 0> // right SW7
+            , <&key_physical_attrs 100 100 900 100 0 0 0> // right SW8
+            , <&key_physical_attrs 100 100 1000 100 0 0 0> // right SW9
+            , <&key_physical_attrs 100 100 1100 100 0 0 0> // right SW10
+            , <&key_physical_attrs 100 100 1200 100 0 0 0> // right SW11
+            , <&key_physical_attrs 100 100 1300 100 0 0 0> // right SW12
+            , <&key_physical_attrs 100 100 1400 100 0 0 0> // right SW13
+            , <&key_physical_attrs 100 100 800 150 0 0 0> // right SW14
+            , <&key_physical_attrs 100 100 900 200 0 0 0> // right SW15
+            , <&key_physical_attrs 100 100 1000 200 0 0 0> // right SW16
+            , <&key_physical_attrs 100 100 1100 200 0 0 0> // right SW17
+            , <&key_physical_attrs 100 100 1200 200 0 0 0> // right SW18
+            , <&key_physical_attrs 100 100 1300 200 0 0 0> // right SW19
+            , <&key_physical_attrs 100 100 1400 200 0 0 0> // right SW20
+            , <&key_physical_attrs 100 100 800 250 0 0 0> // right SW21
+            , <&key_physical_attrs 100 100 900 300 0 0 0> // right SW22
+            , <&key_physical_attrs 100 100 1000 300 0 0 0> // right SW23
+            , <&key_physical_attrs 100 100 1100 300 0 0 0> // right SW24
+            , <&key_physical_attrs 100 100 1200 300 0 0 0> // right SW25
+            , <&key_physical_attrs 100 100 1300 300 0 0 0> // right SW26
+            , <&key_physical_attrs 100 100 1400 300 0 0 0> // right SW27
+            , <&key_physical_attrs 200 100 850 400 0 0 0> // right SW28
+            , <&key_physical_attrs 100 100 1075 400 0 0 0> // right SW29
+            , <&key_physical_attrs 100 100 1175 400 0 0 0> // right SW30
+            , <&key_physical_attrs 100 100 1300 400 0 0 0> // right SW31
+            , <&key_physical_attrs 100 100 1400 400 0 0 0> // right SW32
+            ;
+    };
+};
